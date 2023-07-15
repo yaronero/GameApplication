@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.gameapplication.ui.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/toWebViewFragment"
+            app:destination="@id/webViewActivity"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/toGameFragment"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <activity
+        android:id="@+id/webViewActivity"
+        android:name="com.example.gameapplication.ui.webview.WebViewActivity"
+        android:label="WebViewActivity"
+        tools:layout="@layout/activity_webview">
+    </activity>
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.gameapplication.ui.game.GameFragment"
+        android:label="GameFragment"
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/toNextLevel"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true"
+            app:exitAnim="@anim/slide_out"
+            app:enterAnim="@anim/slide_in"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_margin">20dp</dimen>
+    <dimen name="large_margin">40dp</dimen>
+
+
+    <dimen name="flow_gap">20dp</dimen>
+
+    <dimen name="logo_text_size">30sp</dimen>
+    <dimen name="main_text_size">18sp</dimen>
+    
+    <integer name="anim_duration">500</integer>
+</resources>

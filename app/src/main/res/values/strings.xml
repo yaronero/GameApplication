@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GameApplication</string>
+    
+    <string name="mixed_color">Mixed color</string>
+    <string name="next_level">Next level</string>
+    <string name="pick_correct_mixed_color">Pick correct mixed color:</string>
+    <string name="correct">Correct</string>
+    <string name="incorrect">Incorrect</string>
+</resources>
